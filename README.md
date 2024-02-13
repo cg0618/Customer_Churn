@@ -26,8 +26,37 @@ The primary objective is to broaden coverage and enhance customer loyalty.
 ## Exploratory Data Analysis (EDA)
 
 ### Demographics
-#### 1. Senior Citizens
-Approximately only 16% of the customers are senior citizens, implying that most of our customers in the data are younger people.
+#### 1. Senior Citizens and Dependents
+Approximately only 16% of the customers are senior citizens. That is, majority of telecom customers are typically younger individuals who are not senior citizens. Additionally, a significant portion of these customers may not have dependents, suggesting that they are likely single or without immediate family responsibilities. This demographic profile can influence the telecom in tailoring their services and marketing strategies to provide the needs of this specific customer segment, such as focusing on features and plans that appeal to a younger, more independent audience.
+>![seniorCitizen](https://github.com/cg0618/Customer_Churn/blob/main/images/seniorCitizen.png)
+>![dependents](https://github.com/cg0618/Customer_Churn/blob/main/images/dependents.png)
+
+
+#### 2. Phone Service and Internet service
+The majority of customers have phone and internet services, illustrating a widespread reliance on telecommunications technology for both communication and online connectivity purposes.
+
+>![PhoneService](https://github.com/cg0618/Customer_Churn/blob/main/images/PhoneService.png)
+>![InternetService](https://github.com/cg0618/Customer_Churn/blob/main/images/InternetService.png)
+
+#### 3. Online Security, Online Backup, and Device Protection
+Most customers have chosen not to avail either online security, backup services or device protection, possibly influenced by concerns about additional charges. This decision may reflect prioritization of finances over enhanced protection and data backup.
+
+>![OnlineSecurity](https://github.com/cg0618/Customer_Churn/blob/main/images/OnlineSecurity.png)
+>![OnlineBackup](https://github.com/cg0618/Customer_Churn/blob/main/images/OnlineBackup.png)
+>![DeviceProtection](https://github.com/cg0618/Customer_Churn/blob/main/images/DeviceProtection.png)
+
+
+#### 4. TV and Movie Streaming 
+The majority of customers are actively engaged in movie and TV streaming, which indicates that there is a significant preference for accessing entertainment content through digital platforms rather than traditional satellite television services. This trend emphasizes the increasing popularity and accessibility of streaming services in contemporary media consumption habits.
+
+>![TVStreaming](https://github.com/cg0618/Customer_Churn/blob/main/images/StreamingTV.png)
+>![MovieStreaming](https://github.com/cg0618/Customer_Churn/blob/main/images/StreamingMovies.png)
+
+#### 5. Paperless Billing
+Lots of customers are increasingly adopting paperless billing methods and are opting for digital payment options such as credit cards and other online payment methods. This trend suggests a growing preference for convenient and eco-friendly financial transactions in the digital age.
+>![PaperlessBilling](https://github.com/cg0618/Customer_Churn/blob/main/images/PaperlessBilling.png)
+>![PaymentMethod](https://github.com/cg0618/Customer_Churn/blob/main/images/PaymentMethod.png)
+
 
 ### Distribution of Total Charges by Churn
 The boxplot below suggests that individuals categorized as Churners or Churned customers show smaller total charges in comparison to non-churners. Churners do not complete the contract, implying a likelihood of lower total charges compared to non-churners. To delve deeper into this data, the boxplot has been organized based on their respective contracts.
