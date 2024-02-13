@@ -73,7 +73,7 @@ It seems that everything is normal because none of the factors are strongly corr
 >![corr](https://github.com/cg0618/Customer_Churn/blob/c39c22721c280b2488a5a457fa8cdd5e4e0a3e51/images/corr.png)
 
 ### Histogram
-Based on the histograms below, they suggest that customers are more inclined to churn when they are on a month-to-month contract. The histograms illustrate a higher frequency of customer churn within the month-to-month contract category compared to other contract types (One-year and Two-year contracts). This implies that there might be an association between the contract duration and customer churn, with a higher probability observed among those on a month-to-month arrangement.
+The histograms below suggest that customers are more inclined to churn when they are on a month-to-month contract. They illustrate a higher frequency of customer churn within the month-to-month contract category compared to other contract types (One-year and Two-year contracts). This implies that there might be an association between the contract duration and customer churn, with a higher probability observed among those on a month-to-month arrangement.
 
 >![histContTenure](https://github.com/cg0618/Customer_Churn/blob/3a78782251f7c214daaf4c1a74fd731a20bbca86/images/histContTenure.png)
 
