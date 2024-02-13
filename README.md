@@ -3,7 +3,7 @@
 ## Brief Introduction
 Customer churn occurs when clients or subscribers cease their engagement or business relationship with a company or service provider.
 
-The dataset contains churn data from a fictional telecommunications company. In the telecom industry, customers have the flexibility to select from a diverse range of service providers, often opting to switch between them. This dataset provides insights into customer behaviors and factors influencing churn within this highly competitive market.
+<div align="justify"> The dataset contains churn data from a fictional telecommunications company. In the telecom industry, customers have the flexibility to select from a diverse range of service providers, often opting to switch between them. This dataset provides insights into customer behaviors and factors influencing churn within this highly competitive market. </div>
 
 
 ## Objectives
@@ -27,19 +27,20 @@ The primary objective is to broaden coverage and enhance customer loyalty.
 
 ### Demographics
 #### 1. Senior Citizens and Dependents
-Approximately only 16% of the customers are senior citizens. That is, majority of telecom customers are typically younger individuals who are not senior citizens. Additionally, a significant portion of these customers may not have dependents, suggesting that they are likely single or without immediate family responsibilities. This demographic profile can influence the telecom in tailoring their services and marketing strategies to provide the needs of this specific customer segment, such as focusing on features and plans that appeal to a younger, more independent audience.
+<div align="justify"> Approximately only 16% of the customers are senior citizens. That is, majority of telecom customers are typically younger individuals who are not senior citizens. Additionally, a significant portion of these customers may not have dependents, suggesting that they are likely single or without immediate family responsibilities. This demographic profile can influence the telecom in tailoring their services and marketing strategies to provide the needs of this specific customer segment, such as focusing on features and plans that appeal to a younger, more independent audience. </div> 
+
 >![seniorCitizen](https://github.com/cg0618/Customer_Churn/blob/main/images/seniorCitizen.png)
 >![dependents](https://github.com/cg0618/Customer_Churn/blob/main/images/dependents.png)
 
 
 #### 2. Phone and Internet service
-The majority of customers have phone and internet services, illustrating a widespread reliance on telecommunications technology for both communication and online connectivity purposes.
+<div align="justify"> The majority of customers have phone and internet services, illustrating a widespread reliance on telecommunications technology for both communication and online connectivity purposes. </div>
 
 >![PhoneService](https://github.com/cg0618/Customer_Churn/blob/main/images/PhoneService.png)
 >![InternetService](https://github.com/cg0618/Customer_Churn/blob/main/images/InternetService.png)
 
 #### 3. Online Security, Online Backup, and Device Protection
-Most customers have chosen not to avail either online security, backup services or device protection, possibly influenced by concerns about additional charges. This decision may reflect prioritization of finances over enhanced protection and data backup.
+<div align="justify"> Most customers have chosen not to avail either online security, backup services or device protection, possibly influenced by concerns about additional charges. This decision may reflect prioritization of finances over enhanced protection and data backup. </div>
 
 >![OnlineSecurity](https://github.com/cg0618/Customer_Churn/blob/main/images/OnlineSecurity.png)
 >![OnlineBackup](https://github.com/cg0618/Customer_Churn/blob/main/images/OnlineBackup.png)
@@ -47,33 +48,34 @@ Most customers have chosen not to avail either online security, backup services 
 
 
 #### 4. TV and Movie Streaming 
-The majority of customers are actively engaged in movie and TV streaming, which indicates that there is a significant preference for accessing entertainment content through digital platforms rather than traditional satellite television services. This trend emphasizes the increasing popularity and accessibility of streaming services in contemporary media consumption habits.
+<div align="justify"> The majority of customers are actively engaged in movie and TV streaming, which indicates that there is a significant preference for accessing entertainment content through digital platforms rather than traditional satellite television services. This trend emphasizes the increasing popularity and accessibility of streaming services in contemporary media consumption habits.</div>
 
 >![TVStreaming](https://github.com/cg0618/Customer_Churn/blob/main/images/StreamingTV.png)
 >![MovieStreaming](https://github.com/cg0618/Customer_Churn/blob/main/images/StreamingMovies.png)
 
 #### 5. Paperless Billing
-Lots of customers are increasingly adopting paperless billing methods and are opting for digital payment options such as credit cards and other online payment methods. This trend suggests a growing preference for convenient and eco-friendly financial transactions in the digital age.
+<div align="justify"> Lots of customers are increasingly adopting paperless billing methods and are opting for digital payment options such as credit cards and other online payment methods. This trend suggests a growing preference for convenient and eco-friendly financial transactions in the digital age. </div>
+
 >![PaperlessBilling](https://github.com/cg0618/Customer_Churn/blob/main/images/PaperlessBilling.png)
 >![PaymentMethod](https://github.com/cg0618/Customer_Churn/blob/main/images/PaymentMethod.png)
 
 
 ### Distribution of Total Charges by Churn
-The boxplot below suggests that individuals categorized as Churners or Churned customers show smaller total charges in comparison to non-churners. Churners do not complete the contract, implying a likelihood of lower total charges compared to non-churners. To delve deeper into this data, the boxplot has been organized based on their respective contracts.
+<div align="justify"> The boxplot below suggests that individuals categorized as Churners or Churned customers show smaller total charges in comparison to non-churners. Churners do not complete the contract, implying a likelihood of lower total charges compared to non-churners. To delve deeper into this data, the boxplot has been organized based on their respective contracts. </div>
 
 >![totChargeDist](https://github.com/cg0618/Customer_Churn/blob/80864801200b6f0ef3d111b7085468aab3041015/images/totChargeDist.png)
 
-Surprisingly, it appears that customers with one-year and two-year contracts have higher total charges, which implies that different contract durations might contribute in influencing the total charges incurred by customers. Further, this means that after having their one-year and two-year contracts, customers are more likely to churn if they are having more total charge.
+<div align="justify"> Surprisingly, it appears that customers with one-year and two-year contracts have higher total charges, which implies that different contract durations might contribute in influencing the total charges incurred by customers. Further, this means that after having their one-year and two-year contracts, customers are more likely to churn if they are having more total charge. </div>
 
 >![totChargeContractDist](https://github.com/cg0618/Customer_Churn/blob/80864801200b6f0ef3d111b7085468aab3041015/images/totChargeContractDist.png)
 
 ### Correlation
-It seems that everything is normal because none of the factors are strongly correlated to the variable of interest, which is customer churn.
+<div align="justify"> It seems that everything is normal because none of the factors are strongly correlated to the variable of interest, which is customer churn. </div>
 
 >![corr](https://github.com/cg0618/Customer_Churn/blob/c39c22721c280b2488a5a457fa8cdd5e4e0a3e51/images/corr.png)
 
 ### Histogram
-The histograms below suggest that customers are more inclined to churn when they are on a month-to-month contract. They illustrate a higher frequency of customer churn within the month-to-month contract category compared to other contract types (One-year and Two-year contracts). This implies that there might be an association between the contract duration and customer churn, with a higher probability observed among those on a month-to-month arrangement.
+<div align="justify"> The histograms below suggest that customers are more inclined to churn when they are on a month-to-month contract. They illustrate a higher frequency of customer churn within the month-to-month contract category compared to other contract types (One-year and Two-year contracts). This implies that there might be an association between the contract duration and customer churn, with a higher probability observed among those on a month-to-month arrangement. </div>
 
 >![histContTenure](https://github.com/cg0618/Customer_Churn/blob/3a78782251f7c214daaf4c1a74fd731a20bbca86/images/histContTenure.png)
 
@@ -194,4 +196,15 @@ The histograms below suggest that customers are more inclined to churn when they
 |ANN|	0.8439|	0.8209|	0.8300|
 
 ## Conclusion
-In summary, while the random forest model exhibited strong performance on the test set with a high F1 score, its apparent overfitting was indicated by the notably high training accuracy and a significant drop in performance when applied to the test set. Consequently, among the considered models, the XGBoost model emerged as the superior performer.
+<div align="justify"> In summary, while the random forest model exhibited strong performance on the test set with a high F1 score, its apparent overfitting was indicated by the notably high training accuracy and a significant drop in performance when applied to the test set. Consequently, among the considered models, the XGBoost model emerged as the superior performer. </div>
+
+### Best model important features
+Now, since the XGBoost Model was selected as the best model, importance of features must then be analyzed. 
+
+>![best_model_impfeat](https://github.com/cg0618/Customer_Churn/blob/main/images/best_model_impfeat.png)
+
+<div align="justify"> We can see from the chart above that the month-to-month contract has the highest importance in predicting customer churn. This statement aligns with the earlier analysis indicating a higher churn frequency within this contract category, which suggests that contractual terms are essential in retaining a customer. Notably, a majority of customers (55%) opt for month-to-month contracts, which surpasses the combined proportion of the other two categories at approximately 45%. This preference could be attributed to the flexibility offered by month-to-month contracts - allowing customers to effortlessly switch providers or cancel services, probably without incurring penalties. </div>
+
+>![Contract](https://github.com/cg0618/Customer_Churn/blob/main/images/Contract.png)
+
+
