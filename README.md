@@ -1,5 +1,3 @@
-# Customer_Churn
-Customer Churn Prediction
 # Telecom Customer Churn
 
 ## Brief Introduction
@@ -27,3 +25,13 @@ The primary objective is to broaden coverage and enhance customer loyalty.
 
 ## Exploratory Data Analysis (EDA)
 
+### Demographics
+#### 1. Senior Citizens
+Approximately only 16% of the customers are senior citizens, implying that most of our customers in the data are younger people.
+
+### Distribution of Total Charges by Churn
+The boxplot below suggests that individuals categorized as Churners or Churned customers show smaller total charges in comparison to non-churners. Churners do not complete the contract, implying a likelihood of lower total charges compared to non-churners. To delve deeper into this data, the boxplot has been organized based on their respective contracts.
+![totChargeDist](https://github.com/cg0618/Customer_Churn/blob/80864801200b6f0ef3d111b7085468aab3041015/images/totChargeDist.png)
+
+Surprisingly, it appears that customers with one-year and two-year contracts have higher total charges, which implies that different contract durations might contribute in influencing the total charges incurred by customers. Further, this means that after having their one-year and two-year contracts, customers are more likely to churn if they are having more total charge.
+![totChargeContractDist](https://github.com/cg0618/Customer_Churn/blob/80864801200b6f0ef3d111b7085468aab3041015/images/totChargeContractDist.png)
