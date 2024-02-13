@@ -5,9 +5,9 @@ Customer churn occurs when clients or subscribers cease their engagement or busi
 
 The dataset contains churn data from a fictional telecommunications company. In the telecom industry, customers have the flexibility to select from a diverse range of service providers, often opting to switch between them. This dataset provides insights into customer behaviors and factors influencing churn within this highly competitive market.
 
-The primary objective is to broaden coverage and enhance customer loyalty.
 
 ## Objectives
+The primary objective is to broaden coverage and enhance customer loyalty.
 - To determine the percentage of customers who have churned and those who remain active with the services.
 - To identify the most appropriate predictive model for accurately classifying customers into churned and non-churned categories.
 - To examine the data with regard to different features influencing customer churn.
