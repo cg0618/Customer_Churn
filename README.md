@@ -43,7 +43,7 @@ It seems that everything is normal because none of the factors are strongly corr
 
 >![corr](https://github.com/cg0618/Customer_Churn/blob/c39c22721c280b2488a5a457fa8cdd5e4e0a3e51/images/corr.png)
 
-Histogram
+### Histogram
 Based on the histograms below, they suggest that customers are more inclined to churn when they are on a month-to-month contract. The histograms illustrate a higher frequency of customer churn within the month-to-month contract category compared to other contract types (One-year and Two-year contracts). This implies that there might be an association between the contract duration and customer churn, with a higher probability observed among those on a month-to-month arrangement.
 
 >![histContTenure](https://github.com/cg0618/Customer_Churn/blob/3a78782251f7c214daaf4c1a74fd731a20bbca86/images/histContTenure.png)
@@ -163,3 +163,6 @@ Based on the histograms below, they suggest that customers are more inclined to 
 |XGBoosting|	0.9148|	0.8451|	0.8500|
 |Multilayer Perceptron|	0.8228|	0.8267|	0.8300|
 |ANN|	0.8439|	0.8209|	0.8300|
+
+## Conclusion
+In summary, while the random forest model exhibited strong performance on the test set with a high F1 score, its apparent overfitting was indicated by the notably high training accuracy and a significant drop in performance when applied to the test set. Consequently, among the considered models, the XGBoost model emerged as the superior performer.
