@@ -32,7 +32,7 @@ Approximately only 16% of the customers are senior citizens. That is, majority o
 >![dependents](https://github.com/cg0618/Customer_Churn/blob/main/images/dependents.png)
 
 
-#### 2. Phone Service and Internet service
+#### 2. Phone and Internet service
 The majority of customers have phone and internet services, illustrating a widespread reliance on telecommunications technology for both communication and online connectivity purposes.
 
 >![PhoneService](https://github.com/cg0618/Customer_Churn/blob/main/images/PhoneService.png)
