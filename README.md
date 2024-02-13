@@ -1,4 +1,4 @@
-# Telecom Customer Churn
+# <div align="center"> Telecom Customer Churn </div>
 
 ## Brief Introduction
 Customer churn occurs when clients or subscribers cease their engagement or business relationship with a company or service provider.
@@ -31,7 +31,135 @@ Approximately only 16% of the customers are senior citizens, implying that most 
 
 ### Distribution of Total Charges by Churn
 The boxplot below suggests that individuals categorized as Churners or Churned customers show smaller total charges in comparison to non-churners. Churners do not complete the contract, implying a likelihood of lower total charges compared to non-churners. To delve deeper into this data, the boxplot has been organized based on their respective contracts.
-![totChargeDist](https://github.com/cg0618/Customer_Churn/blob/80864801200b6f0ef3d111b7085468aab3041015/images/totChargeDist.png)
+
+>![totChargeDist](https://github.com/cg0618/Customer_Churn/blob/80864801200b6f0ef3d111b7085468aab3041015/images/totChargeDist.png)
 
 Surprisingly, it appears that customers with one-year and two-year contracts have higher total charges, which implies that different contract durations might contribute in influencing the total charges incurred by customers. Further, this means that after having their one-year and two-year contracts, customers are more likely to churn if they are having more total charge.
-![totChargeContractDist](https://github.com/cg0618/Customer_Churn/blob/80864801200b6f0ef3d111b7085468aab3041015/images/totChargeContractDist.png)
+
+>![totChargeContractDist](https://github.com/cg0618/Customer_Churn/blob/80864801200b6f0ef3d111b7085468aab3041015/images/totChargeContractDist.png)
+
+### Correlation
+It seems that everything is normal because none of the factors are strongly correlated to the variable of interest, which is customer churn.
+
+>![corr](https://github.com/cg0618/Customer_Churn/blob/c39c22721c280b2488a5a457fa8cdd5e4e0a3e51/images/corr.png)
+
+Histogram
+Based on the histograms below, they suggest that customers are more inclined to churn when they are on a month-to-month contract. The histograms illustrate a higher frequency of customer churn within the month-to-month contract category compared to other contract types (One-year and Two-year contracts). This implies that there might be an association between the contract duration and customer churn, with a higher probability observed among those on a month-to-month arrangement.
+
+>![histContTenure](https://github.com/cg0618/Customer_Churn/blob/3a78782251f7c214daaf4c1a74fd731a20bbca86/images/histContTenure.png)
+
+## Predictive Modeling
+- The data was standardized to address the limitations of machine learning algorithms. Standardization involves scaling the numerical features to a common scale, ensuring that they contribute equally to the model. 
+- Due to an imbalance between customers who churn and those who don't, a technique called SMOTE (Synthetic Minority Over-sampling Technique) was utilized. SMOTE works by generating synthetic instances of the minority class (in this case, churners) to balance the class distribution. By creating these "realistic" data points, SMOTE helps the machine learning models better learn and generalize patterns from the imbalanced data, which enhances its ability to make accurate predictions on whether a customer is a churner or a non-churner.
+- The dataset was divided into training and testing sets: 80% of the data was allocated for training the model and 20% was reserved for testing its performance. This approach helps evaluate how well the model generalizes to new, unseen data.
+
+### 1. Logistic Regression Model
+
+>The best parameters for LogisticRegression model is: {'C': 10, 'penalty': 'l2'}
+>
+>--------------------
+>
+>(R2 score) in the training set is 81.55% for LogisticRegression model.
+>
+>(R2 score) in the testing set is 82.38% for LogisticRegression model.
+>
+>F1 score is 0.83 for LogisticRegression model.
+
+
+### 2. Support Vector Machine
+
+>The best parameters for SVC model is: {'C': 1, 'gamma': 'scale'}
+>
+>--------------------
+>(R2 score) in the training set is 83.16% for SVC model.
+>
+>(R2 score) in the testing set is 82.58% for SVC model.
+>
+>F1 score is 0.83 for SVC model.
+
+
+### 3. Random Forest Classifier
+
+>The best parameters for RandomForestClassifier model is: {'max_depth': None, 'n_estimators': 200}
+>
+>--------------------
+>
+>(R2 score) in the training set is 99.84% for RandomForestClassifier model.
+>
+>(R2 score) in the testing set is 85.14% for RandomForestClassifier model.
+>
+>F1 score is 0.85 for RandomForestClassifier model.
+
+### Boosted Trees Classifier
+### 4. AdaBoost Classifier
+
+>The best parameters for AdaBoostClassifier model is: {'learning_rate': 0.2, 'n_estimators': 200}
+>
+>--------------------
+>
+>(R2 score) in the training set is 78.86% for AdaBoostClassifier model.
+>
+>(R2 score) in the testing set is 80.40% for AdaBoostClassifier model.
+>
+>F1 score is 0.81 for AdaBoostClassifier model.
+
+
+### 5. Gradient Boosting Classifier
+
+>The best parameters for GradientBoostingClassifier model is: {'learning_rate': 0.2, 'max_depth': 6, 'n_estimators': 100}
+>
+>--------------------
+>
+>(R2 score) in the training set is 94.71% for GradientBoostingClassifier model.
+>
+>(R2 score) in the testing set is 83.49% for GradientBoostingClassifier model.
+>
+>F1 score is 0.84 for GradientBoostingClassifier model.
+
+
+### 6. XGBoost
+
+>The best parameters for XGBClassifier model is: {'learning_rate': 0.2, 'max_depth': 5, 'n_estimators': 150}
+>
+>--------------------
+>
+>(R2 score) in the training set is 91.48% for XGBClassifier model.
+>
+>(R2 score) in the testing set is 84.51% for XGBClassifier model.
+>
+>F1 score is 0.85 for XGBClassifier model.
+
+
+### 7. Multilayer Perceptron model
+
+>--------------------
+>
+>(R2 score) in the training set is 82.27% for Multilayer Perceptron model.
+>
+>(R2 score) in the testing set is 82.67% for Multilayer Perceptron model.
+>
+>F1 score is 0.83 for Multilayer Perceptron model.
+
+
+### 8. ANN with 2 hidden layers (ReLU activation)
+
+>--------------------
+>
+>(R2 score) in the training set is 84.39% for ANN model.
+>
+>(R2 score) in the testing set is 82.09% for ANN model.
+>
+>F1 score is 0.83 for ANN model.
+
+
+| Table | Train Score |	Test Score |	F1 Score |
+| :---: | :---: |	:---: |	:---: |
+|Logistic Reg|	0.8155|	0.8238|	0.8300|
+|Decision Tree|	0.8316|	0.8258|	0.8300|
+|Support Vector Machine|	0.8634|	0.8001|	0.8100|
+|Random Forest|	0.9984|	0.8514|	0.8500|
+|AdaBoost|	0.7886|	0.8040|	0.8040|
+|Gradient Boosting|	0.9471|	0.8349|	0.8400|
+|XGBoosting|	0.9148|	0.8451|	0.8500|
+|Multilayer Perceptron|	0.8228|	0.8267|	0.8300|
+|ANN|	0.8439|	0.8209|	0.8300|
